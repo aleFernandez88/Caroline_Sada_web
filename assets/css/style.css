@@ -250,7 +250,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: var(--primary-bg);
+  color: var(--secondary-text);
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -634,7 +634,7 @@ section {
   display: block;
   font-size: 28px;
   font-weight: 700;
-  color: var(--secondary-bg);
+  color: var(--primary-text);
 }
 
 .why-us .box h4 {
@@ -646,7 +646,7 @@ section {
 }
 
 .why-us .box p {
-  color: #aaaaaa;
+  color: var(--strong-text);
   font-size: 15px;
   margin: 0;
   padding: 0;
@@ -737,6 +737,7 @@ section {
   transition: all ease-in-out 0.3s;
   background: var(--secondary-text);
   box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+  color: var(--strong-text);
 }
 
 .services .icon-box .icon {
@@ -764,7 +765,7 @@ section {
 
 .services .icon-box .icon svg path {
   transition: 0.5s;
-  fill: #f5f5f5;
+  fill: var(--primary-bg);
 }
 
 .services .icon-box h4 {
@@ -773,8 +774,8 @@ section {
   font-size: 22px;
 }
 
-.services .icon-box h4 a {
-  color: var(--secondary-bg);
+.services .icon-box h2 a {
+  color: var(--strong-text);
   transition: ease-in-out 0.3s;
 }
 
@@ -791,53 +792,18 @@ section {
   box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
 
-.services .iconbox-blue i {
-  color: var(--primary-text);
-}
-
-.services .iconbox-blue:hover .icon i {
+.services .icon-box i{
   color: var(--secondary-text);
 }
 
-.services .iconbox-blue:hover .icon path {
-  fill: var(--primary-text);
-}
-
-.services .iconbox-orange i {
-  color: var(--primary-text);
-}
-
-.services .iconbox-orange:hover .icon i {
+.services .icon-box:hover .icon i{
   color: var(--secondary-text);
 }
 
-.services .iconbox-orange:hover .icon path {
+.services .icon-box:hover .icon path{
   fill: var(--primary-text);
 }
 
-.services .iconbox-pink i {
-  color: var(--primary-text);
-}
-
-.services .iconbox-pink:hover .icon i {
-  color: var(--secondary-text);
-}
-
-.services .iconbox-pink:hover .icon path {
-  fill: var(--primary-text);
-}
-
-.services .iconbox-teal i {
-  color: var(--primary-text);
-}
-
-.services .iconbox-teal:hover .icon i {
-  color: var(--secondary-text);
-}
-
-.services .iconbox-teal:hover .icon path {
-  fill: var(--primary-text);
-}
 
 /*--------------------------------------------------------------
 # Features
@@ -861,7 +827,7 @@ section {
   line-height: 1;
 }
 
-.features .icon-box h3 {
+.features .icon-box h2 {
   font-weight: 700;
   margin: 0;
   padding: 0;
@@ -869,13 +835,14 @@ section {
   font-size: 16px;
 }
 
-.features .icon-box h3 a {
-  color: var(--secondary-bg);
+.features .icon-box h2 {
+  color: var(--primary-text);
   transition: ease-in-out 0.3s;
 }
 
-.features .icon-box:hover h3 a {
-  color: var(--primary-bg);
+.features .icon-box:hover h2 a {
+  color: var(--secondary-bg);
+  text-shadow: 2px 0px 1px var(--strong-text);
 }
 
 
@@ -899,7 +866,7 @@ section {
   overflow: hidden;
   text-align: center;
   border-radius: 5px;
-  background: var(--secondary-text);
+  background: var(--primary-bg);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 
 }
@@ -918,12 +885,15 @@ section {
   opacity: 0;
   transition: ease-in-out 0.3s;
   text-align: center;
-  background: rgba(255, 255, 255, 0.85);
+  background: var(--primary-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .team .member .social a {
   transition: color 0.3s;
-  color: var(--secondary-bg);
+  color: var(--primary-text);
   margin: 0 10px;
   padding-top: 8px;
   display: inline-block;
@@ -939,10 +909,10 @@ section {
 }
 
 .team .member .member-info {
-  padding: 25px 15px;
+  padding: 15px 15px 25px;
 }
 
-.team .member .member-info h4 {
+.team .member .member-info h2 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
@@ -953,7 +923,7 @@ section {
   display: block;
   font-size: 13px;
   font-weight: 400;
-  color: #aaaaaa;
+  color: var(--secondary-text);
 }
 
 .team .member .member-info p {
@@ -1004,14 +974,14 @@ section {
 
 .pricing h5 {
   font-size: 46px;
-  color: var(--light-text);
+  color: var(--strong-text);
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 25px;
 }
 
 .pricing h4 span {
-  color: var(--light-text);
+  color: var(--primary-bg);
   font-size: 18px;
   display: block;
 }
@@ -1374,7 +1344,7 @@ section {
   margin-bottom: 30px;
 }
 
-#footer .footer-top .footer-contact h3 {
+#footer .footer-top .footer-contact h2 {
   font-size: 28px;
   margin: 0 0 10px 0;
   padding: 0;
@@ -1388,10 +1358,10 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
-  color: var(--light-text);
+  color: var(--secondary-text);
 }
 
-#footer .footer-top h4 {
+#footer .footer-top h2 {
   font-size: 16px;
   font-weight: bold;
   color: var(--secondary-bg);
@@ -1427,7 +1397,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: var(--light-text);
+  color: var(--secondary-text);
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1442,11 +1412,11 @@ section {
   font-size: 15px;
 }
 
-#footer .footer-newsletter h4,
+#footer .footer-newsletter h2,
 #footer .footer-newsletter p {
   font-size: 16px;
   font-weight: bold;
-  color: var(--light-text);
+  color: var(--secondary-text);
   position: relative;
   padding-bottom: 12px;
 }
@@ -1499,8 +1469,8 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #deddec;
-  color: var(--secondary-bg);
+  background: var(--light-text);
+  color: var(--primary-bg);
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1512,8 +1482,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: var(--primary-bg);
-  color: var(--secondary-text);
+  background: var(--secondary-bg);
   text-decoration: none;
 }
 
@@ -1523,5 +1492,5 @@ section {
 }
 
 #footer .credits a{
- color: var(--light-text);
+ color: var(--secondary-text);
 }
